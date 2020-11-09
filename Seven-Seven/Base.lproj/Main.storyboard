@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vZv-8X-fjk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--2A-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Seven_Seven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="oQ1-2N-umo">
+                                <rect key="frame" x="70.5" y="286.5" width="273" height="323"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUi-WX-cg7" customClass="CRButton" customModule="Seven_Seven" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="273" height="64.5"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Green">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="33"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="irp-Rg-JzP" kind="show" id="TQ4-D1-XS0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shk-Qn-qwX" customClass="CRButton" customModule="Seven_Seven" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="129" width="273" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Blue">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="33"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="xRG-QY-H04" kind="show" id="ZBm-Oq-Pms"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyr-hq-zDa" customClass="CRButton" customModule="Seven_Seven" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="258.5" width="273" height="64.5"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Red">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="33"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="qwi-f8-ae8" kind="show" id="iQw-Zs-XOh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Shk-Qn-qwX" firstAttribute="height" secondItem="oQ1-2N-umo" secondAttribute="height" multiplier="0.2" id="dBA-V7-fhy"/>
+                                    <constraint firstItem="eUi-WX-cg7" firstAttribute="height" secondItem="oQ1-2N-umo" secondAttribute="height" multiplier="0.2" id="mtb-jC-DGw"/>
+                                    <constraint firstItem="Vyr-hq-zDa" firstAttribute="height" secondItem="oQ1-2N-umo" secondAttribute="height" multiplier="0.2" id="z4B-hX-87R"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oQ1-2N-umo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jf4-vJ-pUZ"/>
+                            <constraint firstItem="oQ1-2N-umo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.66" id="Txk-wt-P6e"/>
+                            <constraint firstItem="oQ1-2N-umo" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.36" id="bvc-fW-fMS"/>
+                            <constraint firstItem="oQ1-2N-umo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eKd-qp-Eg3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="2A" id="k76-7g-8Jw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.85507246376812" y="93.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vbp-SQ-3bi">
+            <objects>
+                <viewController id="qwi-f8-ae8" customClass="ViewController" customModule="Seven_Seven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xHi-2u-0Ie">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PNp-Zu-fG6"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2GB-mq-MIt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ofi-Gq-4wO" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1680" y="854"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Gff-k8-YK7">
+            <objects>
+                <viewController id="xRG-QY-H04" customClass="ViewController" customModule="Seven_Seven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vFq-f7-5U2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Fcy-4h-qeE"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ANB-hg-jsd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wof-NI-qTs" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1679.7101449275362" y="93.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0td-S5-blc">
+            <objects>
+                <viewController id="irp-Rg-JzP" customClass="ViewController" customModule="Seven_Seven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lNf-Z4-F99">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="T67-pp-XDH"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uqc-RA-t6q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ifw-Qa-UdH" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1680" y="-601"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ayT-fw-w1m">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J7t-jF-GvO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="1.circle.fill" catalog="system" id="tTT-rQ-Zqc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vor-Fv-Uiq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hxw-xG-s0k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BeV-v9-Auy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184.05797101449278" y="93.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ol2-UY-ZOu">
+            <objects>
+                <viewController id="x7V-mM-PUT" customClass="CViewController" customModule="Seven_Seven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v4p-hU-8gL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zPB-Sv-dHl">
+                                <rect key="frame" x="0.0" y="428.5" width="414" height="384.5"/>
+                                <connections>
+                                    <segue destination="J69-su-fd5" kind="embed" identifier="embeddedVC" id="3wL-oF-ANi"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eaI-ql-gpJ">
+                                <rect key="frame" x="0.0" y="426.5" width="414" height="4"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="Jxe-vh-GFf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTZ-3z-vqN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="384.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Uau-hc-vn8">
+                                        <rect key="frame" x="124" y="107.5" width="166" height="169.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hl5-TW-rqM" customClass="ColorChangerButton" customModule="Seven_Seven" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                                <state key="normal" title="Green"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="colorChangerTapped:" destination="x7V-mM-PUT" eventType="touchUpInside" id="OPO-Pf-xoD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pc-8A-ySA" customClass="ColorChangerButton" customModule="Seven_Seven" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="70" width="166" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                                <state key="normal" title="Yellow"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="colorChangerTapped:" destination="x7V-mM-PUT" eventType="touchUpInside" id="Lr7-vS-HAj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooo-aa-Iq3" customClass="ColorChangerButton" customModule="Seven_Seven" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="139.5" width="166" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" systemColor="systemIndigoColor"/>
+                                                <state key="normal" title="Indigo"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="colorChangerTapped:" destination="x7V-mM-PUT" eventType="touchUpInside" id="6tg-dj-J2s"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Uau-hc-vn8" firstAttribute="centerY" secondItem="ZTZ-3z-vqN" secondAttribute="centerY" id="Itu-f8-r1E"/>
+                                    <constraint firstItem="Uau-hc-vn8" firstAttribute="width" secondItem="ZTZ-3z-vqN" secondAttribute="width" multiplier="0.4" id="Uo6-UX-AQa"/>
+                                    <constraint firstItem="Uau-hc-vn8" firstAttribute="height" secondItem="ZTZ-3z-vqN" secondAttribute="height" multiplier="0.44" id="eL3-Ew-D8G"/>
+                                    <constraint firstItem="Uau-hc-vn8" firstAttribute="centerX" secondItem="ZTZ-3z-vqN" secondAttribute="centerX" id="hNi-TK-WGh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RbT-dz-g7u"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="zPB-Sv-dHl" firstAttribute="bottom" secondItem="RbT-dz-g7u" secondAttribute="bottom" id="1Kh-QW-VNN"/>
+                            <constraint firstItem="zPB-Sv-dHl" firstAttribute="leading" secondItem="RbT-dz-g7u" secondAttribute="leading" id="EiT-lA-Hz0"/>
+                            <constraint firstItem="ZTZ-3z-vqN" firstAttribute="trailing" secondItem="RbT-dz-g7u" secondAttribute="trailing" id="EwA-If-O6t"/>
+                            <constraint firstItem="eaI-ql-gpJ" firstAttribute="width" secondItem="v4p-hU-8gL" secondAttribute="width" id="F3v-Dx-EZI"/>
+                            <constraint firstItem="zPB-Sv-dHl" firstAttribute="height" secondItem="RbT-dz-g7u" secondAttribute="height" multiplier="0.5" id="OmQ-Ya-INO"/>
+                            <constraint firstItem="ZTZ-3z-vqN" firstAttribute="bottom" secondItem="zPB-Sv-dHl" secondAttribute="top" id="UES-FJ-Elq"/>
+                            <constraint firstItem="eaI-ql-gpJ" firstAttribute="centerX" secondItem="v4p-hU-8gL" secondAttribute="centerX" id="kNr-cg-odE"/>
+                            <constraint firstItem="ZTZ-3z-vqN" firstAttribute="top" secondItem="RbT-dz-g7u" secondAttribute="top" id="n0S-SJ-sTB"/>
+                            <constraint firstItem="ZTZ-3z-vqN" firstAttribute="leading" secondItem="RbT-dz-g7u" secondAttribute="leading" id="oKm-if-6Lx"/>
+                            <constraint firstItem="eaI-ql-gpJ" firstAttribute="centerY" secondItem="RbT-dz-g7u" secondAttribute="centerY" id="qsh-wy-cGh"/>
+                            <constraint firstItem="zPB-Sv-dHl" firstAttribute="trailing" secondItem="RbT-dz-g7u" secondAttribute="trailing" id="tHY-qa-6WV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="3.circle.fill" catalog="system" id="tTw-uP-PIO"/>
+                    <connections>
+                        <outlet property="greenButton" destination="hl5-TW-rqM" id="IrO-f1-C3O"/>
+                        <outlet property="indigoButton" destination="ooo-aa-Iq3" id="GP3-hD-WbM"/>
+                        <outlet property="yellowButton" destination="8pc-8A-ySA" id="5aZ-2c-ysq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QVL-Jk-jez" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1094.2028985507247" y="-618.08035714285711"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6ap-bG-hoL">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vZv-8X-fjk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xSE-Cc-uMS">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemIndigoColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="J7t-jF-GvO" kind="relationship" relationship="viewControllers" id="3kD-EC-n3G"/>
+                        <segue destination="BwY-fd-3qx" kind="relationship" relationship="viewControllers" id="Vjb-MA-ZyD"/>
+                        <segue destination="x7V-mM-PUT" kind="relationship" relationship="viewControllers" id="vmD-Tn-Qre"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7MO-V9-ZBe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1094.2028985507247" y="93.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2iN-tl-rou">
+            <objects>
+                <viewController id="BwY-fd-3qx" customClass="BViewController" customModule="Seven_Seven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jTh-6m-tQF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iv-eB-rP4" customClass="CRButton" customModule="Seven_Seven" customModuleProvider="target">
+                                <rect key="frame" x="83" y="711" width="248" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Change Selection"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundCorners" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeSelectionTapped:" destination="BwY-fd-3qx" eventType="touchUpInside" id="eX3-An-V8R"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green is selected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLX-mp-j6j">
+                                <rect key="frame" x="83" y="421" width="248" height="54"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CDb-Db-joM"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="3iv-eB-rP4" firstAttribute="centerX" secondItem="jTh-6m-tQF" secondAttribute="centerX" id="7jS-td-BZk"/>
+                            <constraint firstItem="3iv-eB-rP4" firstAttribute="width" secondItem="jTh-6m-tQF" secondAttribute="width" multiplier="0.6" id="930-Ms-GJB"/>
+                            <constraint firstItem="3iv-eB-rP4" firstAttribute="height" secondItem="jTh-6m-tQF" secondAttribute="height" multiplier="0.06" id="CBz-Wl-1RL"/>
+                            <constraint firstItem="KLX-mp-j6j" firstAttribute="width" secondItem="3iv-eB-rP4" secondAttribute="width" id="RB7-W0-Bi3"/>
+                            <constraint firstItem="KLX-mp-j6j" firstAttribute="height" secondItem="3iv-eB-rP4" secondAttribute="height" id="elN-zb-nyh"/>
+                            <constraint firstItem="CDb-Db-joM" firstAttribute="bottom" secondItem="3iv-eB-rP4" secondAttribute="bottom" constant="48" id="hdw-x3-s3N"/>
+                            <constraint firstItem="KLX-mp-j6j" firstAttribute="centerX" secondItem="jTh-6m-tQF" secondAttribute="centerX" id="i64-MV-HIN"/>
+                            <constraint firstItem="KLX-mp-j6j" firstAttribute="centerY" secondItem="jTh-6m-tQF" secondAttribute="centerY" id="sJ6-mC-3yK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="2.circle.fill" catalog="system" id="IHe-cX-hG9"/>
+                    <navigationItem key="navigationItem" id="aEU-C5-b1g"/>
+                    <connections>
+                        <outlet property="changeButton" destination="3iv-eB-rP4" id="2zu-QO-Wa8"/>
+                        <outlet property="selectionLabel" destination="KLX-mp-j6j" id="VDq-QY-Uuk"/>
+                        <segue destination="okx-ia-gl7" kind="show" identifier="selection" id="8Oh-wV-JgK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FGA-QV-2La" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1094" y="873"/>
+        </scene>
+        <!--Selection View Controller-->
+        <scene sceneID="aja-L1-bYL">
+            <objects>
+                <viewController id="okx-ia-gl7" customClass="BSelectionViewController" customModule="Seven_Seven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1pc-oO-PFA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green is selected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOF-Gk-097">
+                                <rect key="frame" x="111.5" y="163" width="191.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HXD-M6-1aC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="rIf-eO-3XC">
+                                <rect key="frame" x="83" y="461.5" width="248" height="252.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1r-tT-g2m" customClass="ColorChangerButton" customModule="Seven_Seven" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="57.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <state key="normal" title="Select Green"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="colorChangerTapped:" destination="okx-ia-gl7" eventType="touchUpInside" id="0IB-wy-Bcr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Jm-OR-5KX" customClass="ColorChangerButton" customModule="Seven_Seven" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="97.5" width="248" height="57.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Select Blue"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="colorChangerTapped:" destination="okx-ia-gl7" eventType="touchUpInside" id="wy0-uC-itQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4i-GZ-Tc2" customClass="ColorChangerButton" customModule="Seven_Seven" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="195" width="248" height="57.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Select Red"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="colorChangerTapped:" destination="okx-ia-gl7" eventType="touchUpInside" id="9Bb-lB-dka"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="J6i-QT-08z"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="IOF-Gk-097" firstAttribute="centerX" secondItem="1pc-oO-PFA" secondAttribute="centerX" id="P0I-9r-Jpw"/>
+                            <constraint firstItem="IOF-Gk-097" firstAttribute="top" secondItem="J6i-QT-08z" secondAttribute="top" constant="163" id="VcO-wJ-vJt"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="rIf-eO-3XC" secondAttribute="bottom" constant="94" id="VlR-GM-Ir3"/>
+                            <constraint firstItem="rIf-eO-3XC" firstAttribute="height" secondItem="1pc-oO-PFA" secondAttribute="height" multiplier="0.3" id="hcQ-23-n3Z"/>
+                            <constraint firstItem="rIf-eO-3XC" firstAttribute="width" secondItem="1pc-oO-PFA" secondAttribute="width" multiplier="0.6" id="tDx-92-K75"/>
+                            <constraint firstItem="rIf-eO-3XC" firstAttribute="centerX" secondItem="1pc-oO-PFA" secondAttribute="centerX" id="wbS-6o-I20"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BeW-Ml-Ngp"/>
+                    <connections>
+                        <outlet property="blueButton" destination="4Jm-OR-5KX" id="WgB-8K-YNk"/>
+                        <outlet property="greenButton" destination="I1r-tT-g2m" id="QCa-QJ-waV"/>
+                        <outlet property="redButton" destination="P4i-GZ-Tc2" id="fld-GF-PoC"/>
+                        <outlet property="selectionLabel" destination="IOF-Gk-097" id="WxV-C8-q7L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOP-uv-D4A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-213.04347826086959" y="872.54464285714278"/>
+        </scene>
+        <!--Embedded View Controller-->
+        <scene sceneID="8ch-Qh-imN">
+            <objects>
+                <viewController id="J69-su-fd5" customClass="CEmbeddedViewController" customModule="Seven_Seven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fYr-8I-x0P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="384.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="P7y-XD-PPv">
+                                <rect key="frame" x="124" y="107.5" width="166" height="169.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWw-Xy-dXr" customClass="ColorChangerButton" customModule="Seven_Seven" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <state key="normal" title="Green"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="colorChangerTapped:" destination="J69-su-fd5" eventType="touchUpInside" id="dc8-fB-ETn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kje-yr-SyN" customClass="ColorChangerButton" customModule="Seven_Seven" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="70" width="166" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" title="Yellow"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="colorChangerTapped:" destination="J69-su-fd5" eventType="touchUpInside" id="TAK-li-Ov0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZr-fO-kQs" customClass="ColorChangerButton" customModule="Seven_Seven" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="139.5" width="166" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemIndigoColor"/>
+                                        <state key="normal" title="Indigo"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="colorChangerTapped:" destination="J69-su-fd5" eventType="touchUpInside" id="OHN-vY-Lbp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZCK-iw-Aa5"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="P7y-XD-PPv" firstAttribute="centerX" secondItem="fYr-8I-x0P" secondAttribute="centerX" id="YV0-67-dOr"/>
+                            <constraint firstItem="P7y-XD-PPv" firstAttribute="width" secondItem="fYr-8I-x0P" secondAttribute="width" multiplier="0.4" id="dZ0-DN-ltO"/>
+                            <constraint firstItem="P7y-XD-PPv" firstAttribute="height" secondItem="fYr-8I-x0P" secondAttribute="height" multiplier="0.44" id="f95-uq-PG1"/>
+                            <constraint firstItem="P7y-XD-PPv" firstAttribute="centerY" secondItem="fYr-8I-x0P" secondAttribute="centerY" id="wHt-1P-yyV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greenButton" destination="BWw-Xy-dXr" id="DOE-mU-R54"/>
+                        <outlet property="indigoButton" destination="LZr-fO-kQs" id="p3l-rj-3uQ"/>
+                        <outlet property="yellowButton" destination="kje-yr-SyN" id="D49-MW-JBv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K6B-Wb-BbJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-170" y="-618"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="3iv-eB-rP4">
+            <size key="intrinsicContentSize" width="121" height="30"/>
+        </designable>
+        <designable name="4Jm-OR-5KX">
+            <size key="intrinsicContentSize" width="78" height="30"/>
+        </designable>
+        <designable name="8pc-8A-ySA">
+            <size key="intrinsicContentSize" width="44" height="30"/>
+        </designable>
+        <designable name="BWw-Xy-dXr">
+            <size key="intrinsicContentSize" width="42" height="30"/>
+        </designable>
+        <designable name="I1r-tT-g2m">
+            <size key="intrinsicContentSize" width="89" height="30"/>
+        </designable>
+        <designable name="LZr-fO-kQs">
+            <size key="intrinsicContentSize" width="43" height="30"/>
+        </designable>
+        <designable name="P4i-GZ-Tc2">
+            <size key="intrinsicContentSize" width="74" height="30"/>
+        </designable>
+        <designable name="Shk-Qn-qwX">
+            <size key="intrinsicContentSize" width="41" height="38"/>
+        </designable>
+        <designable name="Vyr-hq-zDa">
+            <size key="intrinsicContentSize" width="36" height="38"/>
+        </designable>
+        <designable name="eUi-WX-cg7">
+            <size key="intrinsicContentSize" width="56" height="38"/>
+        </designable>
+        <designable name="hl5-TW-rqM">
+            <size key="intrinsicContentSize" width="42" height="30"/>
+        </designable>
+        <designable name="kje-yr-SyN">
+            <size key="intrinsicContentSize" width="44" height="30"/>
+        </designable>
+        <designable name="ooo-aa-Iq3">
+            <size key="intrinsicContentSize" width="43" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="1.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="2.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="3.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
